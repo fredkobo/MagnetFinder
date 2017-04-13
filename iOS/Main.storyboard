@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                                <rect key="frame" x="40" y="285" width="520" height="30"/>
+                                <constraints>
+                                    <constraint id="7" firstItem="3" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <color key="progressTintColor" colorSpace="calibratedRGB" red="0.996078431372549" green="0.93333333333333335" blue="0.086274509803921567" alpha="1"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                                <rect key="frame" x="40" y="215" width="520" height="30"/>
+                                <constraints>
+                                    <constraint id="15" firstItem="11" firstAttribute="height" constant="30"/>
+                                </constraints>
+                                <color key="progressTintColor" colorSpace="calibratedRGB" red="0.62745098039215685" green="0.035294117647058823" blue="0.2196078431372549" alpha="1"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                                <rect key="frame" x="40" y="355" width="520" height="30"/>
+                                <constraints>
+                                    <constraint id="20" firstItem="16" firstAttribute="height" constant="30"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="4" firstItem="3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40"/>
+                            <constraint id="5" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="40"/>
+                            <constraint id="6" firstItem="3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY"/>
+                            <constraint id="12" firstItem="11" firstAttribute="leading" secondItem="3" secondAttribute="leading"/>
+                            <constraint id="13" firstItem="3" firstAttribute="trailing" secondItem="11" secondAttribute="trailing"/>
+                            <constraint id="14" firstItem="3" firstAttribute="top" secondItem="11" secondAttribute="bottom" constant="40"/>
+                            <constraint id="17" firstItem="16" firstAttribute="leading" secondItem="3" secondAttribute="leading"/>
+                            <constraint id="18" firstItem="3" firstAttribute="trailing" secondItem="16" secondAttribute="trailing"/>
+                            <constraint id="19" firstItem="16" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="40"/>
+                        </constraints>
+                        <color key="tintColor" colorSpace="calibratedRGB" red="0.094117647058823528" green="0.5607843137254902" blue="0.75294117647058822" alpha="1"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressY" destination="3" id="name-outlet-3"/>
+                        <outlet property="progressX" destination="11" id="name-outlet-11"/>
+                        <outlet property="progressZ" destination="16" id="name-outlet-16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
